@@ -1,4 +1,4 @@
-framework module Pods_DokuWiki {
+module Pods_DokuWiki {
   umbrella header "Pods-DokuWiki-umbrella.h"
 
   export *

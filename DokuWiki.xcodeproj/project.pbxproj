@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3669A428792A4E7A951A4941 /* Pods_DokuWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 400E133B56316CF0739079DC /* Pods_DokuWiki.framework */; };
-		9DE75D7CAF827059D3053B75 /* Pods_DokuWikiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3999D65B46FFBF41D9BD5FEB /* Pods_DokuWikiTests.framework */; };
+		2E311A544BBE16B0199FA69A /* libPods-DokuWiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44652469E8A28DBFB98A9572 /* libPods-DokuWiki.a */; };
 		B320DDDA21C09BF7008B1AEF /* DokuWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B320DDD021C09BF7008B1AEF /* DokuWiki.framework */; };
 		B320DDDF21C09BF7008B1AEF /* DokuWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B320DDDE21C09BF7008B1AEF /* DokuWikiTests.swift */; };
 		B320DDE121C09BF7008B1AEF /* DokuWiki.h in Headers */ = {isa = PBXBuildFile; fileRef = B320DDD321C09BF7008B1AEF /* DokuWiki.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B326037E21C0BFFF00F02AEC /* DokuWiki.swift in Sources */ = {isa = PBXBuildFile; fileRef = B326037D21C0BFFF00F02AEC /* DokuWiki.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,17 +25,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03903D520314BFD84A4E75AA /* Pods-DokuWikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DokuWikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DokuWikiTests/Pods-DokuWikiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		065CBC76006A54F8E2AFDFD4 /* Pods-DokuWiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DokuWiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DokuWiki/Pods-DokuWiki.debug.xcconfig"; sourceTree = "<group>"; };
-		35445AEBAA656537FBA0F4C3 /* Pods-DokuWikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DokuWikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DokuWikiTests/Pods-DokuWikiTests.release.xcconfig"; sourceTree = "<group>"; };
 		3999D65B46FFBF41D9BD5FEB /* Pods_DokuWikiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DokuWikiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		400E133B56316CF0739079DC /* Pods_DokuWiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DokuWiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44652469E8A28DBFB98A9572 /* libPods-DokuWiki.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DokuWiki.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B320DDD021C09BF7008B1AEF /* DokuWiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DokuWiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B320DDD321C09BF7008B1AEF /* DokuWiki.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DokuWiki.h; sourceTree = "<group>"; };
 		B320DDD421C09BF7008B1AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B320DDD921C09BF7008B1AEF /* DokuWikiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DokuWikiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B320DDDE21C09BF7008B1AEF /* DokuWikiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokuWikiTests.swift; sourceTree = "<group>"; };
 		B320DDE021C09BF7008B1AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B326037D21C0BFFF00F02AEC /* DokuWiki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokuWiki.swift; sourceTree = "<group>"; };
 		C4E23BB50E8924DA5C921957 /* Pods-DokuWiki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DokuWiki.release.xcconfig"; path = "Pods/Target Support Files/Pods-DokuWiki/Pods-DokuWiki.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3669A428792A4E7A951A4941 /* Pods_DokuWiki.framework in Frameworks */,
+				2E311A544BBE16B0199FA69A /* libPods-DokuWiki.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +52,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B320DDDA21C09BF7008B1AEF /* DokuWiki.framework in Frameworks */,
-				9DE75D7CAF827059D3053B75 /* Pods_DokuWikiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +63,6 @@
 			children = (
 				065CBC76006A54F8E2AFDFD4 /* Pods-DokuWiki.debug.xcconfig */,
 				C4E23BB50E8924DA5C921957 /* Pods-DokuWiki.release.xcconfig */,
-				03903D520314BFD84A4E75AA /* Pods-DokuWikiTests.debug.xcconfig */,
-				35445AEBAA656537FBA0F4C3 /* Pods-DokuWikiTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -74,8 +70,8 @@
 		4E9D17129E2C5C4A2326D7EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				400E133B56316CF0739079DC /* Pods_DokuWiki.framework */,
 				3999D65B46FFBF41D9BD5FEB /* Pods_DokuWikiTests.framework */,
+				44652469E8A28DBFB98A9572 /* libPods-DokuWiki.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,6 +101,7 @@
 			children = (
 				B320DDD321C09BF7008B1AEF /* DokuWiki.h */,
 				B320DDD421C09BF7008B1AEF /* Info.plist */,
+				B326037D21C0BFFF00F02AEC /* DokuWiki.swift */,
 			);
 			path = DokuWiki;
 			sourceTree = "<group>";
@@ -155,11 +152,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B320DDE721C09BF7008B1AEF /* Build configuration list for PBXNativeTarget "DokuWikiTests" */;
 			buildPhases = (
-				9F39BB96493575E9E23CFE41 /* [CP] Check Pods Manifest.lock */,
 				B320DDD521C09BF7008B1AEF /* Sources */,
 				B320DDD621C09BF7008B1AEF /* Frameworks */,
 				B320DDD721C09BF7008B1AEF /* Resources */,
-				BFA098D5C6FD9B35CB136282 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +178,7 @@
 				TargetAttributes = {
 					B320DDCF21C09BF7008B1AEF = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					B320DDD821C09BF7008B1AEF = {
 						CreatedOnToolsVersion = 10.0;
@@ -243,42 +239,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9F39BB96493575E9E23CFE41 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DokuWikiTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BFA098D5C6FD9B35CB136282 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DokuWikiTests/Pods-DokuWikiTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DokuWikiTests/Pods-DokuWikiTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -286,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B326037E21C0BFFF00F02AEC /* DokuWiki.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 065CBC76006A54F8E2AFDFD4 /* Pods-DokuWiki.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -452,6 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.connortemple.DokuWiki;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -460,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4E23BB50E8924DA5C921957 /* Pods-DokuWiki.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -485,8 +449,8 @@
 		};
 		B320DDE821C09BF7008B1AEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03903D520314BFD84A4E75AA /* Pods-DokuWikiTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2NE7PNK89E;
@@ -504,8 +468,8 @@
 		};
 		B320DDE921C09BF7008B1AEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35445AEBAA656537FBA0F4C3 /* Pods-DokuWikiTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2NE7PNK89E;

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "33D954C1764B16F387677213BC87B543"
+               BlueprintIdentifier = "4AD158CECE8F64C804D53E927249B687"
                BlueprintName = "Pods-DokuWiki"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods-DokuWiki.framework">
+               BuildableName = "libPods-DokuWiki.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
