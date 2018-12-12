@@ -1,0 +1,6 @@
+module Pods_DokuWikiTests {
+  umbrella header "Pods-DokuWikiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

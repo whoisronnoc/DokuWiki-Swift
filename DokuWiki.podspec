@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DokuWiki"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "A DokuWiki XMLRPC Swift Interface"
   s.homepage     = "https://github.com/whoisronnoc/DokuWiki-Swift"
 

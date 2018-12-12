@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A9E968E2105E7A8FB4A6521 /* libPods-DokuWikiTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15FE2B0D79DCDDD7561E7E29 /* libPods-DokuWikiTests.a */; };
 		2E311A544BBE16B0199FA69A /* libPods-DokuWiki.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44652469E8A28DBFB98A9572 /* libPods-DokuWiki.a */; };
 		B320DDDA21C09BF7008B1AEF /* DokuWiki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B320DDD021C09BF7008B1AEF /* DokuWiki.framework */; };
 		B320DDDF21C09BF7008B1AEF /* DokuWikiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B320DDDE21C09BF7008B1AEF /* DokuWikiTests.swift */; };
@@ -26,8 +27,10 @@
 
 /* Begin PBXFileReference section */
 		065CBC76006A54F8E2AFDFD4 /* Pods-DokuWiki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DokuWiki.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DokuWiki/Pods-DokuWiki.debug.xcconfig"; sourceTree = "<group>"; };
-		3999D65B46FFBF41D9BD5FEB /* Pods_DokuWikiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DokuWikiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15FE2B0D79DCDDD7561E7E29 /* libPods-DokuWikiTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DokuWikiTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44652469E8A28DBFB98A9572 /* libPods-DokuWiki.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DokuWiki.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7434902A3F9BF113417B7218 /* Pods-DokuWikiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DokuWikiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DokuWikiTests/Pods-DokuWikiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF8945D3C1548624B77735F6 /* Pods-DokuWikiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DokuWikiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DokuWikiTests/Pods-DokuWikiTests.release.xcconfig"; sourceTree = "<group>"; };
 		B320DDD021C09BF7008B1AEF /* DokuWiki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DokuWiki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B320DDD321C09BF7008B1AEF /* DokuWiki.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DokuWiki.h; sourceTree = "<group>"; };
 		B320DDD421C09BF7008B1AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B320DDDA21C09BF7008B1AEF /* DokuWiki.framework in Frameworks */,
+				2A9E968E2105E7A8FB4A6521 /* libPods-DokuWikiTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,8 @@
 			children = (
 				065CBC76006A54F8E2AFDFD4 /* Pods-DokuWiki.debug.xcconfig */,
 				C4E23BB50E8924DA5C921957 /* Pods-DokuWiki.release.xcconfig */,
+				7434902A3F9BF113417B7218 /* Pods-DokuWikiTests.debug.xcconfig */,
+				AF8945D3C1548624B77735F6 /* Pods-DokuWikiTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -70,8 +76,8 @@
 		4E9D17129E2C5C4A2326D7EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3999D65B46FFBF41D9BD5FEB /* Pods_DokuWikiTests.framework */,
 				44652469E8A28DBFB98A9572 /* libPods-DokuWiki.a */,
+				15FE2B0D79DCDDD7561E7E29 /* libPods-DokuWikiTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B320DDE721C09BF7008B1AEF /* Build configuration list for PBXNativeTarget "DokuWikiTests" */;
 			buildPhases = (
+				347DBE04341F5552ABA70A08 /* [CP] Check Pods Manifest.lock */,
 				B320DDD521C09BF7008B1AEF /* Sources */,
 				B320DDD621C09BF7008B1AEF /* Frameworks */,
 				B320DDD721C09BF7008B1AEF /* Resources */,
@@ -221,6 +228,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		347DBE04341F5552ABA70A08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DokuWikiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		926887BA934BE6CA64194540 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,6 +474,7 @@
 		};
 		B320DDE821C09BF7008B1AEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7434902A3F9BF113417B7218 /* Pods-DokuWikiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +494,7 @@
 		};
 		B320DDE921C09BF7008B1AEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8945D3C1548624B77735F6 /* Pods-DokuWikiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

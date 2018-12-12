@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import SWXMLHash
 @testable import DokuWiki
 
 class DokuWikiTests: XCTestCase {
@@ -22,6 +23,19 @@ class DokuWikiTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+			let api = DokuWiki(session: URLSession.shared, xmlRPC: URL(string: "http://localhost:7776/lib/exe/xmlrpc.php")!, auth: "Basic c3VwZXJ1c2VyOmJpdG5hbWkx")
+			api.getPagelist(namespace: "", depth: 0) { data, err in
+				guard err == nil else {
+					print(err!)
+					return
+				}
+				guard let data = data else {
+					print("err")
+					return
+				}
+		
+				print(data)
+			}
     }
 
     func testPerformanceExample() {
