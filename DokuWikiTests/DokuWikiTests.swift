@@ -43,11 +43,27 @@ class DokuWikiTests: XCTestCase {
 			wait(for: [expectation], timeout: 10)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+	func testSearch() {
+		let expectation = XCTestExpectation(description: "")
+		
+		let api = DokuWiki(session: URLSession.shared, xmlRPC: URL(string: "http://localhost:7776/lib/exe/xmlrpc.php")!, auth: "Basic c3VwZXJ1c2VyOmJpdG5hbWkx")
+		api.search(query: "asdf") { data, err in
+			XCTAssertNotNil(data)
+			
+			guard err == nil else {
+				print(err!)
+				return
+			}
+			guard let data = data else {
+				print("err")
+				return
+			}
+			
+			print(data)
+			
+			expectation.fulfill()
+		}
+		wait(for: [expectation], timeout: 10)
+	}
 
 }

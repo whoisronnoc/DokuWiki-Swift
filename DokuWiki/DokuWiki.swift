@@ -258,5 +258,56 @@ public class DokuWiki {
 		})
 	}
 	
+	public func search(query: String, completionHandler: @escaping (_ pageList: [String]?, _ err: Error?) -> Void) -> Void {
+		let body = """
+<?xml version="1.0"?>
+<methodCall>
+	<methodName>dokuwiki.search</methodName>
+	<params>
+		<param>
+			<value>
+				<string>\(query)</string>
+			</value>
+		</param>
+	</params>
+</methodCall>
+"""
+		exec(requestBody: body, completionHandler: { data, err in
+			guard err == nil else { // pass err along if received
+				completionHandler(nil, err)
+				return
+			}
+			
+			guard let data = data else { // err if data not present
+				completionHandler(nil, Optional(DokuError.DataError))
+				return
+			}
+			
+			// err if unable to parse | todo: get encoding from header
+			guard let stringData = String(data: data, encoding: String.Encoding.isoLatin1) else {
+				completionHandler(nil, Optional(DokuError.ParseError))
+				return
+			}
+			
+			// err if unable to find element
+			let xml = SWXMLHash.parse(stringData)
+			//			guard  else {
+			//				completionHandler(nil, Optional(DokuError.XMLError))
+			//				return
+			//			}
+			let contents = xml["methodResponse"]["params"]["param"]["value"]["array"]["data"]["value"].all
+			
+			var list: [String] = [String]()
+			for i in contents {
+				if let id = i["struct"]["member"][0]["value"]["string"].element {
+					list.append(id.text)
+				}
+			}
+			
+			// if all goes well data should be returned
+			completionHandler(list, nil)
+		})
+	}
+	
 }
 
