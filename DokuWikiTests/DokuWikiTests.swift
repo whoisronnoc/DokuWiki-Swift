@@ -20,11 +20,13 @@ class DokuWikiTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetPageList() {
+			let expectation = XCTestExpectation(description: "")
+			
 			let api = DokuWiki(session: URLSession.shared, xmlRPC: URL(string: "http://localhost:7776/lib/exe/xmlrpc.php")!, auth: "Basic c3VwZXJ1c2VyOmJpdG5hbWkx")
 			api.getPagelist(namespace: "", depth: 0) { data, err in
+				XCTAssertNotNil(data)
+				
 				guard err == nil else {
 					print(err!)
 					return
@@ -33,9 +35,12 @@ class DokuWikiTests: XCTestCase {
 					print("err")
 					return
 				}
-		
+				
 				print(data)
+				
+				expectation.fulfill()
 			}
+			wait(for: [expectation], timeout: 10)
     }
 
     func testPerformanceExample() {
